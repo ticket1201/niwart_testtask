@@ -1,13 +1,83 @@
+/** {
+  outline: 1px #333 solid;
+}*/
+
+@font-face {
+  font-family: 'Libre Franklin';
+  src: local("Libre Franklin"),
+  url("./assets/fonts/Libre_Franklin/LibreFranklin.ttf") format("truetone");
+}
+
+@font-face {
+  font-family: 'DM Sans Bold';
+  src: local("DM Sans"),
+  url("./assets/fonts/DMSans/DMSans-Bold.ttf") format("truetone");
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Libre Franklin', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #070e1a;
+  color: #fff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+main{
+  padding: 10px;
+}
+
+p{
+  color: #ACBDCA;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h2{
+  font-family: 'DM Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  margin: 0 0 12px;
+}
+
+h3{
+  font-family: 'DM Sans Bold', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+h4{
+  font-family: 'DM Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.swiper{
+  display: none;
+  width: 100%;
+  min-height: 360px;
+  margin: 20px;
+}
+
+.swiper-slide{
+  min-width: 240px;
+}
+
+span.swiper-pagination-bullet{
+  background: white;
+}
+
+@media screen and (max-width: 680px){
+  h2{
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+  }
 }

@@ -1,0 +1,41 @@
+.visaAIHow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr max-content;
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+
+  @media screen {
+    @media (max-width: 1210px) {
+      grid-template-columns: repeat(2, minmax(320px, 1fr));
+      grid-template-rows: 1fr 1fr;
+    }
+    @media (max-width: 680px) {
+      display: none;
+    }
+  }
+
+  &Item {
+    align-self: stretch;
+    padding: 32px 24px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(7.5px);
+
+    & h4 {
+      margin-top: 0;
+    }
+
+    & p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+.visaAIHowSlider {
+  display: none;
+  @media screen and (max-width: 680px) {
+    display: block;
+  }
+}
+

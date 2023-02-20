@@ -26,10 +26,14 @@ export const VisaAI = () => {
             <div className={s.buttonWrapper}>
                 {tabNames.map((el) => {
                     return (
-                        <VisaAITabButton key={el} name={el} callBack={() => {
-                            setActiveTab(el)
-                        }}
-                                         isActive={activeTab === el}/>
+                        <VisaAITabButton
+                            key={el}
+                            name={el}
+                            callBack={() => {
+                                setActiveTab(el)
+                            }}
+                            isActive={activeTab === el}
+                        />
                     )
                 })}
 

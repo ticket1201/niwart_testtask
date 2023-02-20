@@ -1,0 +1,17 @@
+.articleWrapper{
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 96px 0;
+  background-image: url("../../assets/images/OBJECT.png");
+  background-size: cover;
+}
+
+.contentWrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.subtitle{
+  color: #ACBDCA;
+}
